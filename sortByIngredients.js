@@ -62,5 +62,6 @@ let memoizedSort = memoize(sortByIngredient);
 //below is the call that completes the challenge proposed.
 //Please let me know if this satisfies the assignment.
 console.log(memoizedSort("Organic Banana"));
-//O(1) run because of cached result;
-console.log(memoizedSort("Organic Banana"));
+
+//O(1) on subsequent run because of cached result;
+//console.log(memoizedSort("Organic Banana"));
