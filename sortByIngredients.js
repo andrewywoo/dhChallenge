@@ -50,6 +50,7 @@ function sortByIngredient(ingredient) {
     }
   }
 
+  //filter out producs that match ingredient id
   let result = products.filter(p => {
     return p.ingredient_ids.includes(ingredientId);
   });
