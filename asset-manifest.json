@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dailyharvest/static/css/main.4bd0bf9c.chunk.css",
-    "main.js": "/dailyharvest/static/js/main.11571e10.chunk.js",
-    "main.js.map": "/dailyharvest/static/js/main.11571e10.chunk.js.map",
-    "runtime-main.js": "/dailyharvest/static/js/runtime-main.399c1d7c.js",
-    "runtime-main.js.map": "/dailyharvest/static/js/runtime-main.399c1d7c.js.map",
-    "static/js/2.9bff33a0.chunk.js": "/dailyharvest/static/js/2.9bff33a0.chunk.js",
-    "static/js/2.9bff33a0.chunk.js.map": "/dailyharvest/static/js/2.9bff33a0.chunk.js.map",
-    "index.html": "/dailyharvest/index.html",
-    "precache-manifest.2a0a849e621fb75b3c336a3b36c0802f.js": "/dailyharvest/precache-manifest.2a0a849e621fb75b3c336a3b36c0802f.js",
-    "service-worker.js": "/dailyharvest/service-worker.js",
-    "static/css/main.4bd0bf9c.chunk.css.map": "/dailyharvest/static/css/main.4bd0bf9c.chunk.css.map"
+    "main.css": "/dhChallenge/static/css/main.4bd0bf9c.chunk.css",
+    "main.js": "/dhChallenge/static/js/main.11571e10.chunk.js",
+    "main.js.map": "/dhChallenge/static/js/main.11571e10.chunk.js.map",
+    "runtime-main.js": "/dhChallenge/static/js/runtime-main.3f0be811.js",
+    "runtime-main.js.map": "/dhChallenge/static/js/runtime-main.3f0be811.js.map",
+    "static/js/2.9bff33a0.chunk.js": "/dhChallenge/static/js/2.9bff33a0.chunk.js",
+    "static/js/2.9bff33a0.chunk.js.map": "/dhChallenge/static/js/2.9bff33a0.chunk.js.map",
+    "index.html": "/dhChallenge/index.html",
+    "precache-manifest.1035e8cd0cf092663828b0e0334cbfd0.js": "/dhChallenge/precache-manifest.1035e8cd0cf092663828b0e0334cbfd0.js",
+    "service-worker.js": "/dhChallenge/service-worker.js",
+    "static/css/main.4bd0bf9c.chunk.css.map": "/dhChallenge/static/css/main.4bd0bf9c.chunk.css.map"
   }
 }
