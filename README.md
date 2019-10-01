@@ -10,7 +10,11 @@ To satisy the challenge please use the dropdown box and select "Organic Banana."
 
 ### How do I know that a cache is being used?
 
-I've have a console log inside the cache function that prints out the cache everytime an ingredient search is being pulled from cache instead of the O(n) sort function. Open up Dev tools with F12 and click on the console tap to see what's current in cache. The function used to sort through the product list is in /src/containers/Products/Products.js line 35 - 59.
+I've have a console log inside the cache function that prints out the cache everytime an ingredient search is triggered. If it pulls from cache it will print out 'Pulled from cache' else it will say 'Pulled from sort function.'
+
+Open up Dev tools with F12 and click on the console tap to see what's current in cache.
+
+The function used to sort through the product list is in /src/containers/Products/Products.js line 35 - 59.
 
 ## Requirements
 

@@ -50,8 +50,10 @@ class Products extends Component {
       let key = JSON.stringify(...args);
       console.log("cache", cache);
       if (cache[key]) {
+        console.log("Pulled from cache");
         return cache[key];
       } else {
+        console.log("Pulled from sort function");
         cache[key] = func(...args);
         return cache[key];
       }
