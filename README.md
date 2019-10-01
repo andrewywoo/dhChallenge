@@ -2,7 +2,7 @@
 
 This is a challenge presented by Daily Harvest. Given two json files containing products and ingredients, I was asked to write a function that returns all products that has the ingredient "Organic Banana".
 
-Originally, I wrote a simple javascript function that runs off of node.js and can be found in the root labeled "sortByIngredients.js". This can still be tested using 'node sortByIngredients.js'. Inside, you can find the full thought process of the solution, but to make things simple I'll include a summary here. I wrote out a memoization function utilizing a closure to cache any previously searched on ingredient to cut down on time complexity.
+Originally, I wrote a simple javascript function that runs off of node.js and can still be found in this repository labeled "sortByIngredients.js" inside the root folder. This can still be tested using 'node sortByIngredients.js'. Inside, you can find the full thought process of the solution, but to make things simple I'll include a summary here. I wrote out a memoization function utilizing a closure to cache any previously searched on ingredient to cut down on time complexity.
 
 Later, I thought to build out an app in React that utilizes the solution to sort by any ingredient. Below are instructions to run the application. I have also deployed the application on GitHub pages. This can be viewed by clicking on this link https://andrewywoo.github.io/dhChallenge or the link in the project description.
 
@@ -10,11 +10,11 @@ To satisy the challenge please use the dropdown box and select "Organic Banana."
 
 ### How do I know that a cache is being used?
 
-I've have a console log inside the cache function that prints out the cache everytime an ingredient search is triggered. If it pulls from cache it will print out 'Pulled from cache' else it will say 'Pulled from sort function.'
+I've added a console log inside the cache function that prints out the cache everytime an ingredient search is triggered. If it pulls from cache it will print out 'Pulled from cache' else it will say 'Pulled from sort function.'
 
-Open up Dev tools with F12 and click on the console tap to see what's current in cache.
+Open up Dev tools with F12 and click on the console tab to see what's currently in the cache.
 
-The function used to sort through the product list is in /src/containers/Products/Products.js line 35 - 59.
+The function used to sort through the product list is located in /src/containers/Products/Products.js - line 35 - 59.
 
 ## Requirements
 
