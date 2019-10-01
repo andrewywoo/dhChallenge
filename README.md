@@ -4,7 +4,7 @@ This is a challenge presented by Daily Harvest. Given two json files containing 
 
 Originally, I wrote a simple javascript function that runs off of node.js and can be found in the root labeled "sortByIngredients.js". This can still be tested using 'node sortByIngredients.js'. Inside, you can find the full thought process of the solution, but to make things simple I'll include a summary here. I wrote out a memoization function utilizing a closure to cache any previously searched on ingredient to cut down on time complexity.
 
-Later, I thought to build out an app in React that utilizes the solution to sort by any ingredient. Below are instructions to run the application. I have also deployed the application on GitHub pages. This can be viewed by clicking on this link or the link in the project description.
+Later, I thought to build out an app in React that utilizes the solution to sort by any ingredient. Below are instructions to run the application. I have also deployed the application on GitHub pages. This can be viewed by clicking on this link http://andrewywoo.github.io/dailyharvest or the link in the project description.
 
 ## Requirements
 
