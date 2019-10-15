@@ -32,7 +32,7 @@ To install the react project please clone the repository:
 
 ```
 $ git clone https://github.com/andrewywoo/dhChallenge.git
-$ cd dailyharvest
+$ cd dhChallenge
 $ npm install
 ```
 
