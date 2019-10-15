@@ -1,54 +1,40 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Products from "./containers/Products/Products";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ingredients: [],
-      products: []
-    };
-  }
+const App = () => {
+  const [ingredients, setIngredients] = useState([]);
+  const [products, setProducts] = useState([]);
 
-  componentDidMount() {
+  useEffect(() => {
     axios.get("./ingredients.json").then(res => {
-      this.setState({ ...this.state, ingredients: res.data.ingredients });
+      setIngredients(res.data.ingredients);
     });
     axios.get("./products.json").then(res => {
-      this.setState({ ...this.state, products: res.data.products });
+      setProducts(res.data.products);
     });
-  }
+  }, []);
 
-  render() {
-    let productsContainer;
+  let productsContainer;
 
-    if (
-      this.state.products.length === 0 ||
-      this.state.ingredients.length === 0
-    ) {
-      productsContainer = <div>Loading...</div>;
-    } else {
-      productsContainer = (
-        <Products
-          products={this.state.products}
-          ingredients={this.state.ingredients}
-        ></Products>
-      );
-    }
-
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Daily Harvest Challenge</h1>
-        </header>
-
-        {/* Products container holds search bar and product list */}
-        {productsContainer}
-      </div>
+  if (products.length === 0 || ingredients.length === 0) {
+    productsContainer = <div>Loading...</div>;
+  } else {
+    productsContainer = (
+      <Products products={products} ingredients={ingredients}></Products>
     );
   }
-}
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Daily Harvest Challenge</h1>
+      </header>
+      {/* Products container holds search bar and product list */}
+      {productsContainer}
+    </div>
+  );
+};
 
 export default App;

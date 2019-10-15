@@ -4,7 +4,7 @@ import "./SearchBar.css";
 const searchBar = props => {
   return (
     <>
-      <label for="ingredients">Search By Ingredients</label>
+      <label htmlFor="ingredients">Search By Ingredients</label>
       <select
         className="searchBar"
         name="ingredients"
